@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.4.4)
+  - MaterialActivityIndicator (0.0.6)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - MaterialActivityIndicator
+  - Moya (= 14.0.0)
+  - SDWebImage (~> 5.12)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MaterialActivityIndicator
+    - Moya
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  MaterialActivityIndicator: 5061a52fadf7d22533734f2d34806311331bc424
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 7d62a03ea5bee45ebc509765ee0383b24ae1d8d7
+
+COCOAPODS: 1.11.2
