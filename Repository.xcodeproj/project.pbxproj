@@ -15,7 +15,6 @@
 		9999BC4627255CB400FC938C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9999BC4427255CB400FC938C /* Main.storyboard */; };
 		9999BC4827255CBA00FC938C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9999BC4727255CBA00FC938C /* Assets.xcassets */; };
 		9999BC4B27255CBA00FC938C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9999BC4927255CBA00FC938C /* LaunchScreen.storyboard */; };
-		9999BC5627255CBA00FC938C /* repositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC5527255CBA00FC938C /* repositoryTests.swift */; };
 		9999BC6027255CBA00FC938C /* repositoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC5F27255CBA00FC938C /* repositoryUITests.swift */; };
 		9999BC6227255CBA00FC938C /* repositoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC6127255CBA00FC938C /* repositoryUITestsLaunchTests.swift */; };
 		9999BC772725605600FC938C /* PKRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC762725605600FC938C /* PKRepository.swift */; };
@@ -37,6 +36,10 @@
 		9999BCD62725806D00FC938C /* PKRepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD52725806D00FC938C /* PKRepositoryTableViewCell.swift */; };
 		9999BCD82725807E00FC938C /* PKNextButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD72725807E00FC938C /* PKNextButtonTableViewCell.swift */; };
 		9999BCDA272580CA00FC938C /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD9272580CA00FC938C /* CommonHelper.swift */; };
+		9999BCDC27258AD100FC938C /* repositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 9999BCDB27258AD100FC938C /* repositories.json */; };
+		9999BCDE27258AE300FC938C /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCDD27258AE300FC938C /* JSONHelper.swift */; };
+		9999BCE027258BE400FC938C /* PKRepositoryViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCDF27258BE400FC938C /* PKRepositoryViewModelTests.swift */; };
+		9999BCE327259A2A00FC938C /* PKRepositoryServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCE227259A2A00FC938C /* PKRepositoryServiceTests.swift */; };
 		FDA3068A8FC1EF6DD8C487C3 /* Pods_repository_repositoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +64,7 @@
 		06A0E4894188707785C5FE43 /* Pods_repositoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repositoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDFC96BEF1F7C1A64E14C3C /* Pods-repository.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository.release.xcconfig"; path = "Target Support Files/Pods-repository/Pods-repository.release.xcconfig"; sourceTree = "<group>"; };
 		87237C26FCB30446A60E7D87 /* Pods-repositoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repositoryTests.release.xcconfig"; path = "Target Support Files/Pods-repositoryTests/Pods-repositoryTests.release.xcconfig"; sourceTree = "<group>"; };
-		9999BC3B27255CB400FC938C /* repository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = repository.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9999BC3B27255CB400FC938C /* Repository.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Repository.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9999BC3E27255CB400FC938C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9999BC4027255CB400FC938C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9999BC4227255CB400FC938C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,9 +72,8 @@
 		9999BC4727255CBA00FC938C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9999BC4A27255CBA00FC938C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9999BC4C27255CBA00FC938C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9999BC5127255CBA00FC938C /* repositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9999BC5527255CBA00FC938C /* repositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repositoryTests.swift; sourceTree = "<group>"; };
-		9999BC5B27255CBA00FC938C /* repositoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = repositoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9999BC5127255CBA00FC938C /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9999BC5B27255CBA00FC938C /* RepositoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9999BC5F27255CBA00FC938C /* repositoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repositoryUITests.swift; sourceTree = "<group>"; };
 		9999BC6127255CBA00FC938C /* repositoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repositoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9999BC762725605600FC938C /* PKRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepository.swift; sourceTree = "<group>"; };
@@ -93,6 +95,10 @@
 		9999BCD52725806D00FC938C /* PKRepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		9999BCD72725807E00FC938C /* PKNextButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNextButtonTableViewCell.swift; sourceTree = "<group>"; };
 		9999BCD9272580CA00FC938C /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
+		9999BCDB27258AD100FC938C /* repositories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = repositories.json; sourceTree = "<group>"; };
+		9999BCDD27258AE300FC938C /* JSONHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		9999BCDF27258BE400FC938C /* PKRepositoryViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryViewModelTests.swift; sourceTree = "<group>"; };
+		9999BCE227259A2A00FC938C /* PKRepositoryServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryServiceTests.swift; sourceTree = "<group>"; };
 		A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repository_repositoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED531B22BC689E6C48DDE60 /* Pods-repository-repositoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository-repositoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-repository-repositoryUITests/Pods-repository-repositoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0419D9F7DE14E83963F10D3 /* Pods-repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository.debug.xcconfig"; path = "Target Support Files/Pods-repository/Pods-repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,9 +150,9 @@
 		9999BC3C27255CB400FC938C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9999BC3B27255CB400FC938C /* repository.app */,
-				9999BC5127255CBA00FC938C /* repositoryTests.xctest */,
-				9999BC5B27255CBA00FC938C /* repositoryUITests.xctest */,
+				9999BC3B27255CB400FC938C /* Repository.app */,
+				9999BC5127255CBA00FC938C /* RepositoryTests.xctest */,
+				9999BC5B27255CBA00FC938C /* RepositoryUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,7 +180,10 @@
 		9999BC5427255CBA00FC938C /* repositoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				9999BC5527255CBA00FC938C /* repositoryTests.swift */,
+				9999BCE1272596CA00FC938C /* Resources */,
+				9999BCDD27258AE300FC938C /* JSONHelper.swift */,
+				9999BCDF27258BE400FC938C /* PKRepositoryViewModelTests.swift */,
+				9999BCE227259A2A00FC938C /* PKRepositoryServiceTests.swift */,
 			);
 			path = repositoryTests;
 			sourceTree = "<group>";
@@ -305,6 +314,14 @@
 			path = TableViewCells;
 			sourceTree = "<group>";
 		};
+		9999BCE1272596CA00FC938C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9999BCDB27258AD100FC938C /* repositories.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CB56A37E1620304044A96377 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,9 +348,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9999BC3A27255CB400FC938C /* repository */ = {
+		9999BC3A27255CB400FC938C /* Repository */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9999BC6527255CBA00FC938C /* Build configuration list for PBXNativeTarget "repository" */;
+			buildConfigurationList = 9999BC6527255CBA00FC938C /* Build configuration list for PBXNativeTarget "Repository" */;
 			buildPhases = (
 				AE64CD4B07246005E7651D78 /* [CP] Check Pods Manifest.lock */,
 				9999BC3727255CB400FC938C /* Sources */,
@@ -345,14 +362,14 @@
 			);
 			dependencies = (
 			);
-			name = repository;
+			name = Repository;
 			productName = repository;
-			productReference = 9999BC3B27255CB400FC938C /* repository.app */;
+			productReference = 9999BC3B27255CB400FC938C /* Repository.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9999BC5027255CBA00FC938C /* repositoryTests */ = {
+		9999BC5027255CBA00FC938C /* RepositoryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9999BC6827255CBA00FC938C /* Build configuration list for PBXNativeTarget "repositoryTests" */;
+			buildConfigurationList = 9999BC6827255CBA00FC938C /* Build configuration list for PBXNativeTarget "RepositoryTests" */;
 			buildPhases = (
 				E959FDCA7F83B605D74128BC /* [CP] Check Pods Manifest.lock */,
 				9999BC4D27255CBA00FC938C /* Sources */,
@@ -364,14 +381,14 @@
 			dependencies = (
 				9999BC5327255CBA00FC938C /* PBXTargetDependency */,
 			);
-			name = repositoryTests;
+			name = RepositoryTests;
 			productName = repositoryTests;
-			productReference = 9999BC5127255CBA00FC938C /* repositoryTests.xctest */;
+			productReference = 9999BC5127255CBA00FC938C /* RepositoryTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9999BC5A27255CBA00FC938C /* repositoryUITests */ = {
+		9999BC5A27255CBA00FC938C /* RepositoryUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9999BC6B27255CBA00FC938C /* Build configuration list for PBXNativeTarget "repositoryUITests" */;
+			buildConfigurationList = 9999BC6B27255CBA00FC938C /* Build configuration list for PBXNativeTarget "RepositoryUITests" */;
 			buildPhases = (
 				B58F3819BC379555C68209F7 /* [CP] Check Pods Manifest.lock */,
 				9999BC5727255CBA00FC938C /* Sources */,
@@ -384,9 +401,9 @@
 			dependencies = (
 				9999BC5D27255CBA00FC938C /* PBXTargetDependency */,
 			);
-			name = repositoryUITests;
+			name = RepositoryUITests;
 			productName = repositoryUITests;
-			productReference = 9999BC5B27255CBA00FC938C /* repositoryUITests.xctest */;
+			productReference = 9999BC5B27255CBA00FC938C /* RepositoryUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -412,7 +429,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9999BC3627255CB400FC938C /* Build configuration list for PBXProject "repository" */;
+			buildConfigurationList = 9999BC3627255CB400FC938C /* Build configuration list for PBXProject "Repository" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -425,9 +442,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9999BC3A27255CB400FC938C /* repository */,
-				9999BC5027255CBA00FC938C /* repositoryTests */,
-				9999BC5A27255CBA00FC938C /* repositoryUITests */,
+				9999BC3A27255CB400FC938C /* Repository */,
+				9999BC5027255CBA00FC938C /* RepositoryTests */,
+				9999BC5A27255CBA00FC938C /* RepositoryUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9999BCDC27258AD100FC938C /* repositories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +614,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9999BC5627255CBA00FC938C /* repositoryTests.swift in Sources */,
+				9999BCDE27258AE300FC938C /* JSONHelper.swift in Sources */,
+				9999BCE027258BE400FC938C /* PKRepositoryViewModelTests.swift in Sources */,
+				9999BCE327259A2A00FC938C /* PKRepositoryServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,12 +634,12 @@
 /* Begin PBXTargetDependency section */
 		9999BC5327255CBA00FC938C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9999BC3A27255CB400FC938C /* repository */;
+			target = 9999BC3A27255CB400FC938C /* Repository */;
 			targetProxy = 9999BC5227255CBA00FC938C /* PBXContainerItemProxy */;
 		};
 		9999BC5D27255CBA00FC938C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9999BC3A27255CB400FC938C /* repository */;
+			target = 9999BC3A27255CB400FC938C /* Repository */;
 			targetProxy = 9999BC5C27255CBA00FC938C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -840,7 +860,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/repository.app/repository";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repository.app/Repository";
 			};
 			name = Debug;
 		};
@@ -866,7 +886,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/repository.app/repository";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Repository.app/Repository";
 			};
 			name = Release;
 		};
@@ -921,7 +941,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9999BC3627255CB400FC938C /* Build configuration list for PBXProject "repository" */ = {
+		9999BC3627255CB400FC938C /* Build configuration list for PBXProject "Repository" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9999BC6327255CBA00FC938C /* Debug */,
@@ -930,7 +950,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9999BC6527255CBA00FC938C /* Build configuration list for PBXNativeTarget "repository" */ = {
+		9999BC6527255CBA00FC938C /* Build configuration list for PBXNativeTarget "Repository" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9999BC6627255CBA00FC938C /* Debug */,
@@ -939,7 +959,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9999BC6827255CBA00FC938C /* Build configuration list for PBXNativeTarget "repositoryTests" */ = {
+		9999BC6827255CBA00FC938C /* Build configuration list for PBXNativeTarget "RepositoryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9999BC6927255CBA00FC938C /* Debug */,
@@ -948,7 +968,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9999BC6B27255CBA00FC938C /* Build configuration list for PBXNativeTarget "repositoryUITests" */ = {
+		9999BC6B27255CBA00FC938C /* Build configuration list for PBXNativeTarget "RepositoryUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9999BC6C27255CBA00FC938C /* Debug */,

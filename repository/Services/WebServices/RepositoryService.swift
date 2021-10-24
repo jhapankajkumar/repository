@@ -12,7 +12,7 @@ protocol PKRepositoryServiceProtocol: AnyObject {
     func fetchRepositoryList(url: String?, _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void)
 }
 
-final class PKRespositoryService: PKRepositoryServiceProtocol {
+final class PKRepositoryService: PKRepositoryServiceProtocol {
     let networkService: PKNetworkService
     init(networkService: PKNetworkService = PKNetworkService.shared) {
         self.networkService = networkService

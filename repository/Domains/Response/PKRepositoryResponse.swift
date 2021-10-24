@@ -6,9 +6,9 @@
 //
 
 import Foundation
-typealias PKListResponse = PKRespositoryResponse.PKRepositoryList
+typealias PKListResponse = PKRepositoryResponse.PKRepositoryList
 
-struct PKRespositoryResponse {
+struct PKRepositoryResponse {
     // MARK: - PKRepositoryList
     struct PKRepositoryList: Decodable {
         let pagelen: Int?
