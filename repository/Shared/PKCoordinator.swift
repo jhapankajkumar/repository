@@ -6,6 +6,10 @@
 //
 
 import Foundation
-protocol PKCoordinator {
-    
+protocol PKCoordinator: AnyObject {
+    var childCoordinators: [PKCoordinator] { get }
+    func start()
+    func addChildCoordinator(_ coordinator: PKCoordinator)
+    func removeChildCoordinator(_ coordinator: PKCoordinator)
 }
+

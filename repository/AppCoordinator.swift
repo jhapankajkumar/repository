@@ -20,7 +20,10 @@ final class AppCoordinator {
     }()
     
     func start() {
-        window.rootViewController = rootViewController
+        let navigationController: UINavigationController = .custom()
+        let repositoryListCoordinator = PKRepositoryListCoordinator(with: navigationController)
+        repositoryListCoordinator.start()
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
 }

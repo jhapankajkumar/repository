@@ -8,19 +8,19 @@
 import Foundation
 import Moya
 
-protocol RepositoryServiceProtocol: AnyObject {
-    func fetchRepositoryList( _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void)
+protocol PKRepositoryServiceProtocol: AnyObject {
+    func fetchRepositoryList(url: String?, _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void)
 }
 
-final class RespositoryService: RepositoryServiceProtocol {
+final class PKRespositoryService: PKRepositoryServiceProtocol {
     let networkService: PKNetworkService
     init(networkService: PKNetworkService = PKNetworkService.shared) {
         self.networkService = networkService
     }
     
-    func fetchRepositoryList( _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void) {
-        
-        networkService.requestObject(PKRepositoryServiceEndPoint.repositoryList, c: PKListResponse.self) {
+    func fetchRepositoryList(url: String?, _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void) {
+        let nxtURL: URL? = URL(string: url ?? "")
+        networkService.requestObject(PKRepositoryServiceEndPoint.repositoryList(nextPageURL: nxtURL), c: PKListResponse.self) {
             (result) in
             switch result {
             case .success(let response):

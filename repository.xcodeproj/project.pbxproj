@@ -27,6 +27,16 @@
 		9999BC842725671800FC938C /* PKNetworkServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC832725671800FC938C /* PKNetworkServiceConstants.swift */; };
 		9999BC862725681B00FC938C /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC852725681B00FC938C /* RepositoryService.swift */; };
 		9999BC8C27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */; };
+		9999BCC62725772800FC938C /* VIewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCC52725772800FC938C /* VIewController+Extensions.swift */; };
+		9999BCC92725779100FC938C /* PKRepositoryListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */; };
+		9999BCCB2725784400FC938C /* PKRepositoryViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */; };
+		9999BCCD272578AE00FC938C /* PKRepositoryListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */; };
+		9999BCCF27257AB400FC938C /* PKRepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */; };
+		9999BCD227257C6800FC938C /* PKRepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */; };
+		9999BCD327257C6800FC938C /* PKRepositoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */; };
+		9999BCD62725806D00FC938C /* PKRepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD52725806D00FC938C /* PKRepositoryTableViewCell.swift */; };
+		9999BCD82725807E00FC938C /* PKNextButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD72725807E00FC938C /* PKNextButtonTableViewCell.swift */; };
+		9999BCDA272580CA00FC938C /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD9272580CA00FC938C /* CommonHelper.swift */; };
 		FDA3068A8FC1EF6DD8C487C3 /* Pods_repository_repositoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +83,16 @@
 		9999BC832725671800FC938C /* PKNetworkServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNetworkServiceConstants.swift; sourceTree = "<group>"; };
 		9999BC852725681B00FC938C /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
 		9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryServiceEndPoints.swift; sourceTree = "<group>"; };
+		9999BCC52725772800FC938C /* VIewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VIewController+Extensions.swift"; sourceTree = "<group>"; };
+		9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListProtocols.swift; sourceTree = "<group>"; };
+		9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryViewData.swift; sourceTree = "<group>"; };
+		9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListCoordinator.swift; sourceTree = "<group>"; };
+		9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListViewModel.swift; sourceTree = "<group>"; };
+		9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListViewController.swift; sourceTree = "<group>"; };
+		9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PKRepositoryListViewController.xib; sourceTree = "<group>"; };
+		9999BCD52725806D00FC938C /* PKRepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		9999BCD72725807E00FC938C /* PKNextButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNextButtonTableViewCell.swift; sourceTree = "<group>"; };
+		9999BCD9272580CA00FC938C /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
 		A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repository_repositoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED531B22BC689E6C48DDE60 /* Pods-repository-repositoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository-repositoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-repository-repositoryUITests/Pods-repository-repositoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0419D9F7DE14E83963F10D3 /* Pods-repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository.debug.xcconfig"; path = "Target Support Files/Pods-repository/Pods-repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,10 +154,11 @@
 		9999BC3D27255CB400FC938C /* repository */ = {
 			isa = PBXGroup;
 			children = (
-				9999BC7527255FFF00FC938C /* Shared */,
 				9999BC7427255FF600FC938C /* Scenes */,
+				9999BC7527255FFF00FC938C /* Shared */,
 				9999BC7127255FCF00FC938C /* Domains */,
 				9999BC6E27255F9E00FC938C /* Services */,
+				9999BCC4272576E000FC938C /* Extensions */,
 				9999BC3E27255CB400FC938C /* AppDelegate.swift */,
 				9999BC4027255CB400FC938C /* SceneDelegate.swift */,
 				9999BC4227255CB400FC938C /* ViewController.swift */,
@@ -223,6 +244,7 @@
 		9999BC7427255FF600FC938C /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9999BCC72725775100FC938C /* RepositoryList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -231,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				9999BC7A2725619800FC938C /* PKCoordinator.swift */,
+				9999BCD9272580CA00FC938C /* CommonHelper.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -249,6 +272,37 @@
 				9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */,
 			);
 			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		9999BCC4272576E000FC938C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9999BCC52725772800FC938C /* VIewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9999BCC72725775100FC938C /* RepositoryList */ = {
+			isa = PBXGroup;
+			children = (
+				9999BCD42725803800FC938C /* TableViewCells */,
+				9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */,
+				9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */,
+				9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */,
+				9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */,
+				9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */,
+				9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */,
+			);
+			path = RepositoryList;
+			sourceTree = "<group>";
+		};
+		9999BCD42725803800FC938C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9999BCD52725806D00FC938C /* PKRepositoryTableViewCell.swift */,
+				9999BCD72725807E00FC938C /* PKNextButtonTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		CB56A37E1620304044A96377 /* Pods */ = {
@@ -384,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9999BC4B27255CBA00FC938C /* LaunchScreen.storyboard in Resources */,
+				9999BCD327257C6800FC938C /* PKRepositoryListViewController.xib in Resources */,
 				9999BC4827255CBA00FC938C /* Assets.xcassets in Resources */,
 				9999BC4627255CB400FC938C /* Main.storyboard in Resources */,
 			);
@@ -518,13 +573,22 @@
 				9999BC4327255CB400FC938C /* ViewController.swift in Sources */,
 				9999BC7F2725664600FC938C /* PKNetworkService.swift in Sources */,
 				9999BC3F27255CB400FC938C /* AppDelegate.swift in Sources */,
+				9999BCCD272578AE00FC938C /* PKRepositoryListCoordinator.swift in Sources */,
+				9999BCC62725772800FC938C /* VIewController+Extensions.swift in Sources */,
+				9999BCD82725807E00FC938C /* PKNextButtonTableViewCell.swift in Sources */,
 				9999BC8C27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift in Sources */,
 				9999BC79272560B500FC938C /* PKRepositoryResponse.swift in Sources */,
+				9999BCCF27257AB400FC938C /* PKRepositoryListViewModel.swift in Sources */,
 				9999BC4127255CB400FC938C /* SceneDelegate.swift in Sources */,
+				9999BCD227257C6800FC938C /* PKRepositoryListViewController.swift in Sources */,
+				9999BCC92725779100FC938C /* PKRepositoryListProtocols.swift in Sources */,
+				9999BCD62725806D00FC938C /* PKRepositoryTableViewCell.swift in Sources */,
 				9999BC82272566C400FC938C /* PKNetworkError.swift in Sources */,
 				9999BC7B2725619800FC938C /* PKCoordinator.swift in Sources */,
+				9999BCCB2725784400FC938C /* PKRepositoryViewData.swift in Sources */,
 				9999BC842725671800FC938C /* PKNetworkServiceConstants.swift in Sources */,
 				9999BC7D272561BF00FC938C /* AppCoordinator.swift in Sources */,
+				9999BCDA272580CA00FC938C /* CommonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
