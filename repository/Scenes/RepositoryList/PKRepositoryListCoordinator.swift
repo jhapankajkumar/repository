@@ -17,7 +17,7 @@ final class PKRepositoryListCoordinator: PKCoordinator {
     }
     
     func start() {
-        let service: PKRepositoryServiceProtocol = PKRespositoryService()
+        let service: PKRepositoryServiceProtocol = PKRepositoryService()
         let viewModel: PKRepositoryListViewModelProtocol = PKRepositoryListViewModel(service: service)
         viewModel.coordinator = self
         
