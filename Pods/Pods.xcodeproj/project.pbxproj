@@ -320,7 +320,7 @@
 		03DB261EF002A89B5FC62AA8DB7F7017 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		0615B6C22C58041F5364FD83BB2A9A91 /* Pods-repository-repositoryUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-repository-repositoryUITests-frameworks.sh"; sourceTree = "<group>"; };
 		06398612AE04DAAA4CFB7900192E24D8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		070E29815EC40AF4B67936AA79C77BB4 /* Pods-repository */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-repository"; path = Pods_repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		070E29815EC40AF4B67936AA79C77BB4 /* Pods_repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		071861C92E0588A195909272858439E4 /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
 		0847D437623F9DA6005E26D09D927FAB /* Pods-repository-repositoryUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-repository-repositoryUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		088C3BA0AEA4734910FB7489D08E8CDA /* MaterialActivityIndicator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MaterialActivityIndicator.release.xcconfig; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 		245A2DCFBCB4C30DE54D8FD2C869793D /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/Core/UIView+WebCache.h"; sourceTree = "<group>"; };
 		24CAADB387A6497A47F267EECAF39C6F /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		27AB636524F6F7342220DB1CBA9EBE67 /* Pods-repositoryTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-repositoryTests-Info.plist"; sourceTree = "<group>"; };
-		27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialActivityIndicator; path = MaterialActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialActivityIndicator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29ABBB20F764E98292B740568CCE9F99 /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		2A8CF1C39B6A0AF8700F1D823BC3A924 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/Core/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		2BBD91BBA8C16DE71D94BB16340E8A41 /* SDInternalMacros.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDInternalMacros.m; path = SDWebImage/Private/SDInternalMacros.m; sourceTree = "<group>"; };
@@ -372,7 +372,7 @@
 		342E82B660965FBAA433F8CB77BC5A57 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
 		3502F349450FD080046DD1C99E1D8486 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/Core/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		36E2EF53DFD0E604F6835374DFF3398B /* URLRequest+Encoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Encoding.swift"; path = "Sources/Moya/URLRequest+Encoding.swift"; sourceTree = "<group>"; };
-		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moya; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		392F1BC0D04BB78A8DD64DC78ACC5467 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
 		398B1097619C95595EF518DD2B89078F /* Moya-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Moya-Info.plist"; sourceTree = "<group>"; };
 		39E3702751ECF1CA5765BB5FFA0F6912 /* Pods-repositoryTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-repositoryTests-umbrella.h"; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		5B80250505D64201A68E65740134D22F /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
 		5BB47A744896154A28CD6D9E9A09E3DF /* SDWebImageCacheSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheSerializer.m; path = SDWebImage/Core/SDWebImageCacheSerializer.m; sourceTree = "<group>"; };
 		5CD9755737793676898216518BDD24A3 /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Moya/Endpoint.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3351AF15D0F6195C26426ACE580726 /* SDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAssociatedObject.m; path = SDWebImage/Private/SDAssociatedObject.m; sourceTree = "<group>"; };
 		5EDC69850F0025C0EAB323F00E274453 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		621ED3F561A0762BC266ED8B6239030E /* MaterialActivityIndicator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MaterialActivityIndicator-prefix.pch"; sourceTree = "<group>"; };
@@ -481,7 +481,7 @@
 		98F74F25361313F89873C9DF69C7A48D /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
 		9ACD92AA8BDD1478D673769785ECCFC0 /* SDWebImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.debug.xcconfig; sourceTree = "<group>"; };
 		9D4335DC839A5CBF76956B00D918635F /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DE67F034A0213929920E162343997D6 /* SDImageAWebPCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAWebPCoder.h; path = SDWebImage/Core/SDImageAWebPCoder.h; sourceTree = "<group>"; };
 		9EA330C12E0BA0C8780DE9F451A8CE69 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		9EE714103C19F4A47CE6B9D745C13539 /* MaterialActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MaterialActivityIndicator.swift; path = MaterialActivityIndicator/Classes/MaterialActivityIndicator.swift; sourceTree = "<group>"; };
@@ -499,7 +499,7 @@
 		AABE0E95E5BF229963A109B79999CE49 /* Moya-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Moya-dummy.m"; sourceTree = "<group>"; };
 		ADCFF76992AF56203F86614E668BE284 /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
 		B008329904C53CDC5914A883AB21E54E /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B141236A4F00816EAB190FDBC3A85BD5 /* Moya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.release.xcconfig; sourceTree = "<group>"; };
 		B19ECE38BE2788E03803F3B4F8747A45 /* Pods-repositoryTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-repositoryTests.modulemap"; sourceTree = "<group>"; };
 		B1FD184908D9E736620DB8E9E9C9E015 /* SDGraphicsImageRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDGraphicsImageRenderer.h; path = SDWebImage/Core/SDGraphicsImageRenderer.h; sourceTree = "<group>"; };
@@ -898,7 +898,6 @@
 				A1690C4E5F2A22C5C4482D8089E923A0 /* UIBezierPath+Circle.swift */,
 				04A0F6985CFCFC5E5F2102AB401AC3E8 /* Support Files */,
 			);
-			name = MaterialActivityIndicator;
 			path = MaterialActivityIndicator;
 			sourceTree = "<group>";
 		};
@@ -1009,7 +1008,6 @@
 				487FCF64095C91F0AF65C9C643EE236B /* Validation.swift */,
 				1D29390E9412CE800C3C6F9D5AA2182B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1044,7 +1042,6 @@
 				29020009A24315E03B8BD67B7391BC13 /* Core */,
 				870E2E74DA0639649866A2614A7ED70F /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -1062,13 +1059,13 @@
 		D5B445E9A2BA8A6883754C9DD1A13134 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator */,
-				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
-				070E29815EC40AF4B67936AA79C77BB4 /* Pods-repository */,
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator.framework */,
+				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */,
+				070E29815EC40AF4B67936AA79C77BB4 /* Pods_repository.framework */,
 				8C2B902D00699742A1A1D328775DA56D /* Pods-repository-repositoryUITests */,
 				8380FC1CF101AE94A93327313D874130 /* Pods-repositoryTests */,
-				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */,
+				B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1079,7 +1076,6 @@
 				26DF2625CB5AE265B226E65DFC1DB4D6 /* Core */,
 				88F1213013536FB05DD139AC20A657EA /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1234,7 +1230,7 @@
 			);
 			name = Moya;
 			productName = Moya;
-			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */;
+			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3847153A6E5EEFB86565BA840768F429 /* SDWebImage */ = {
@@ -1252,7 +1248,7 @@
 			);
 			name = SDWebImage;
 			productName = SDWebImage;
-			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage */;
+			productReference = B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		39C71B954039C65505DC2AFA1788C78E /* Pods-repository-repositoryUITests */ = {
@@ -1292,7 +1288,7 @@
 			);
 			name = MaterialActivityIndicator;
 			productName = MaterialActivityIndicator;
-			productReference = 27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator */;
+			productReference = 27C947111F05E50E155DACD7C1FEB0A7 /* MaterialActivityIndicator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		62AFC714872579EFB00116C1E2939F87 /* Pods-repository */ = {
@@ -1314,7 +1310,7 @@
 			);
 			name = "Pods-repository";
 			productName = Pods_repository;
-			productReference = 070E29815EC40AF4B67936AA79C77BB4 /* Pods-repository */;
+			productReference = 070E29815EC40AF4B67936AA79C77BB4 /* Pods_repository.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		63F70234F6FB9E402A3131C577CE4CD3 /* Pods-repositoryTests */ = {
@@ -1351,7 +1347,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
