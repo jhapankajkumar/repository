@@ -16,7 +16,7 @@ protocol PKRepositoryListViewProtocol: AnyObject {
 // MARK: ViewModel Protocol-
 protocol PKRepositoryListViewModelProtocol: AnyObject {
     var viewDelegate: PKRepositoryListViewModelDelegate? { get set }
-    var coordinatorDelegate: PKRepositoryListCoordinateDelegate? {get set}
+    var coordinator: PKRepositoryListCoordinateProtocol? {get set}
     
     //Data Source
     func numberOfRowsAt(section: Int) -> Int
@@ -34,6 +34,6 @@ protocol PKRepositoryListViewModelDelegate: AnyObject {
 }
 
 // MARK: Coordinator Protocol -
-protocol PKRepositoryListCoordinateDelegate: AnyObject {
+protocol PKRepositoryListCoordinateProtocol: AnyObject {
     func didSelectRepository(repository: PKRepository,  from controller: PKRepositoryListViewProtocol)
 }

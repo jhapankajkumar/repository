@@ -9,17 +9,30 @@ import Foundation
 import Moya
 
 public enum PKRepositoryServiceEndPoint {
-    case repositoryList
+    case repositoryList(nextPageURL: URL?)
 }
 
 extension PKRepositoryServiceEndPoint: TargetType {
     public var baseURL: URL {
-        let baseurl = MicroservicePaths.basePath
-        return URL(string: baseurl)!
+        switch self {
+        case .repositoryList(let nextPageURL):
+            if let nextPageURL = nextPageURL {
+                return nextPageURL
+            } else {
+                let baseurl = MicroservicePaths.basePath
+                return URL(string: baseurl)!
+            }
+        }
     }
     
     public var path: String {
-        return MicroservicePaths.repositories
+        switch self {
+        case .repositoryList(let nextPageURL):
+            if let _ = nextPageURL {
+                return ""
+            }
+            return MicroservicePaths.repositories
+        }
     }
     
     public var method: Moya.Method {

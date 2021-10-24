@@ -11,6 +11,7 @@ final class PKRepositoryListCoordinator: PKCoordinator {
     
     var childCoordinators: [PKCoordinator] = []
     let navigationController: UINavigationController
+    weak var viewModel: PKRepositoryListViewModelProtocol?
     init(with navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -18,10 +19,12 @@ final class PKRepositoryListCoordinator: PKCoordinator {
     func start() {
         let service: PKRepositoryServiceProtocol = PKRespositoryService()
         let viewModel: PKRepositoryListViewModelProtocol = PKRepositoryListViewModel(service: service)
+        viewModel.coordinator = self
         
         let view: UIViewController & PKRepositoryListViewProtocol & PKRepositoryListViewModelDelegate = PKRepositoryListViewController(with: viewModel)
         viewModel.viewDelegate = view
-        viewModel.coordinatorDelegate = self
+        
+        self.viewModel = viewModel
         self.navigationController.setViewControllers([view], animated: true)
     }
     
@@ -36,8 +39,11 @@ final class PKRepositoryListCoordinator: PKCoordinator {
     }
 }
 
-extension PKRepositoryListCoordinator: PKRepositoryListCoordinateDelegate {
+extension PKRepositoryListCoordinator: PKRepositoryListCoordinateProtocol {
     func didSelectRepository(repository: PKRepository, from controller: PKRepositoryListViewProtocol) {
-       
+        if let _ = controller as? UIViewController {
+            print("Move to next screen")
+            // Move to next screen
+        }
     }
 }
