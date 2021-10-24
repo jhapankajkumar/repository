@@ -6,10 +6,13 @@
 //
 
 import Foundation
+typealias PKListResponse = PKRespositoryResponse.PKRepositoryList
 
-// MARK: - BLResponse
-struct BLRepositoryListResponse: Decodable {
-    let pagelen: Int?
-    let values: [PKRepository]?
-    let next: String?
+struct PKRespositoryResponse {
+    // MARK: - PKRepositoryList
+    struct PKRepositoryList: Decodable {
+        let pagelen: Int?
+        let values: [PKRepository]?
+        let next: String?
+    }
 }

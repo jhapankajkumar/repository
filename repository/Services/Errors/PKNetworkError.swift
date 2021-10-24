@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum NetworkError: Error {
+public enum PKNetworkError: Error {
     // 400 Client Error
     case badRequest
     case unauthorized
@@ -42,7 +42,7 @@ public enum NetworkError: Error {
     }
 }
 
-public struct ErrorResponse: Codable, Error {
+public struct PKErrorResponse: Codable, Error {
     public let code: String
     public let title: String
     public let message: String
@@ -54,7 +54,7 @@ public struct ErrorResponse: Codable, Error {
     }
 }
 
-public enum HTTPStatusCode: Int {
+public enum PKHTTPStatusCode: Int {
     
     // 200 Success
     case success = 200
@@ -69,26 +69,26 @@ public enum HTTPStatusCode: Int {
     case serviceUnavailable = 502
     case gatewayTimeout = 503
     
-    var networkError: NetworkError {
+    var networkError: PKNetworkError {
         switch self {
         case .success:
-            return NetworkError.unknown
+            return PKNetworkError.unknown
         case .badRequest:
-            return NetworkError.badRequest
+            return PKNetworkError.badRequest
         case .unauthorized:
-            return NetworkError.unauthorized
+            return PKNetworkError.unauthorized
         case .forbidden:
-            return NetworkError.forbidden
+            return PKNetworkError.forbidden
         case .notFound:
-            return NetworkError.notFound
+            return PKNetworkError.notFound
         case .internalServerError:
-            return NetworkError.internalServerError
+            return PKNetworkError.internalServerError
         case .badGateway:
-            return NetworkError.badGateway
+            return PKNetworkError.badGateway
         case .serviceUnavailable:
-            return NetworkError.serviceUnavailable
+            return PKNetworkError.serviceUnavailable
         case .gatewayTimeout:
-            return NetworkError.gatewayTimeout
+            return PKNetworkError.gatewayTimeout
         }
     }
 }

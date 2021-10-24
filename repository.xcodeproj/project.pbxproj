@@ -22,9 +22,11 @@
 		9999BC79272560B500FC938C /* PKRepositoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC78272560B500FC938C /* PKRepositoryResponse.swift */; };
 		9999BC7B2725619800FC938C /* PKCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC7A2725619800FC938C /* PKCoordinator.swift */; };
 		9999BC7D272561BF00FC938C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC7C272561BF00FC938C /* AppCoordinator.swift */; };
-		9999BC7F2725664600FC938C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC7E2725664600FC938C /* NetworkService.swift */; };
-		9999BC82272566C400FC938C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC81272566C400FC938C /* NetworkError.swift */; };
-		9999BC842725671800FC938C /* NetworkServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC832725671800FC938C /* NetworkServiceConstants.swift */; };
+		9999BC7F2725664600FC938C /* PKNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC7E2725664600FC938C /* PKNetworkService.swift */; };
+		9999BC82272566C400FC938C /* PKNetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC81272566C400FC938C /* PKNetworkError.swift */; };
+		9999BC842725671800FC938C /* PKNetworkServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC832725671800FC938C /* PKNetworkServiceConstants.swift */; };
+		9999BC862725681B00FC938C /* RepositoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC852725681B00FC938C /* RepositoryService.swift */; };
+		9999BC8C27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */; };
 		FDA3068A8FC1EF6DD8C487C3 /* Pods_repository_repositoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,9 +68,11 @@
 		9999BC78272560B500FC938C /* PKRepositoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryResponse.swift; sourceTree = "<group>"; };
 		9999BC7A2725619800FC938C /* PKCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCoordinator.swift; sourceTree = "<group>"; };
 		9999BC7C272561BF00FC938C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		9999BC7E2725664600FC938C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		9999BC81272566C400FC938C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		9999BC832725671800FC938C /* NetworkServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceConstants.swift; sourceTree = "<group>"; };
+		9999BC7E2725664600FC938C /* PKNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNetworkService.swift; sourceTree = "<group>"; };
+		9999BC81272566C400FC938C /* PKNetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNetworkError.swift; sourceTree = "<group>"; };
+		9999BC832725671800FC938C /* PKNetworkServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKNetworkServiceConstants.swift; sourceTree = "<group>"; };
+		9999BC852725681B00FC938C /* RepositoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryService.swift; sourceTree = "<group>"; };
+		9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryServiceEndPoints.swift; sourceTree = "<group>"; };
 		A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repository_repositoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED531B22BC689E6C48DDE60 /* Pods-repository-repositoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository-repositoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-repository-repositoryUITests/Pods-repository-repositoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0419D9F7DE14E83963F10D3 /* Pods-repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository.debug.xcconfig"; path = "Target Support Files/Pods-repository/Pods-repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,10 +170,11 @@
 		9999BC6E27255F9E00FC938C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9999BC8A27256A7400FC938C /* EndPoints */,
 				9999BC80272566B300FC938C /* Errors */,
 				9999BC7027255FBB00FC938C /* NetworkServices */,
 				9999BC6F27255FAA00FC938C /* WebServices */,
-				9999BC832725671800FC938C /* NetworkServiceConstants.swift */,
+				9999BC832725671800FC938C /* PKNetworkServiceConstants.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 		9999BC6F27255FAA00FC938C /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				9999BC852725681B00FC938C /* RepositoryService.swift */,
 			);
 			path = WebServices;
 			sourceTree = "<group>";
@@ -184,7 +190,7 @@
 		9999BC7027255FBB00FC938C /* NetworkServices */ = {
 			isa = PBXGroup;
 			children = (
-				9999BC7E2725664600FC938C /* NetworkService.swift */,
+				9999BC7E2725664600FC938C /* PKNetworkService.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -232,9 +238,17 @@
 		9999BC80272566B300FC938C /* Errors */ = {
 			isa = PBXGroup;
 			children = (
-				9999BC81272566C400FC938C /* NetworkError.swift */,
+				9999BC81272566C400FC938C /* PKNetworkError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		9999BC8A27256A7400FC938C /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				9999BC8B27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift */,
+			);
+			path = EndPoints;
 			sourceTree = "<group>";
 		};
 		CB56A37E1620304044A96377 /* Pods */ = {
@@ -500,14 +514,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9999BC772725605600FC938C /* PKRepository.swift in Sources */,
+				9999BC862725681B00FC938C /* RepositoryService.swift in Sources */,
 				9999BC4327255CB400FC938C /* ViewController.swift in Sources */,
-				9999BC7F2725664600FC938C /* NetworkService.swift in Sources */,
+				9999BC7F2725664600FC938C /* PKNetworkService.swift in Sources */,
 				9999BC3F27255CB400FC938C /* AppDelegate.swift in Sources */,
+				9999BC8C27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift in Sources */,
 				9999BC79272560B500FC938C /* PKRepositoryResponse.swift in Sources */,
 				9999BC4127255CB400FC938C /* SceneDelegate.swift in Sources */,
-				9999BC82272566C400FC938C /* NetworkError.swift in Sources */,
+				9999BC82272566C400FC938C /* PKNetworkError.swift in Sources */,
 				9999BC7B2725619800FC938C /* PKCoordinator.swift in Sources */,
-				9999BC842725671800FC938C /* NetworkServiceConstants.swift in Sources */,
+				9999BC842725671800FC938C /* PKNetworkServiceConstants.swift in Sources */,
 				9999BC7D272561BF00FC938C /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
