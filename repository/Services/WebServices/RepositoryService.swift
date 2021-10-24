@@ -8,11 +8,11 @@
 import Foundation
 import Moya
 
-protocol RepositoryServiceProtocol: AnyObject {
+protocol PKRepositoryServiceProtocol: AnyObject {
     func fetchRepositoryList( _ completion: @escaping (_ response: PKListResponse?, _ error: PKNetworkError?) -> Void)
 }
 
-final class RespositoryService: RepositoryServiceProtocol {
+final class PKRespositoryService: PKRepositoryServiceProtocol {
     let networkService: PKNetworkService
     init(networkService: PKNetworkService = PKNetworkService.shared) {
         self.networkService = networkService

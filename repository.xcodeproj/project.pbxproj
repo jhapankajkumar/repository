@@ -31,6 +31,9 @@
 		9999BCC92725779100FC938C /* PKRepositoryListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */; };
 		9999BCCB2725784400FC938C /* PKRepositoryViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */; };
 		9999BCCD272578AE00FC938C /* PKRepositoryListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */; };
+		9999BCCF27257AB400FC938C /* PKRepositoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */; };
+		9999BCD227257C6800FC938C /* PKRepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */; };
+		9999BCD327257C6800FC938C /* PKRepositoryListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */; };
 		FDA3068A8FC1EF6DD8C487C3 /* Pods_repository_repositoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListProtocols.swift; sourceTree = "<group>"; };
 		9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryViewData.swift; sourceTree = "<group>"; };
 		9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListCoordinator.swift; sourceTree = "<group>"; };
+		9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListViewModel.swift; sourceTree = "<group>"; };
+		9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKRepositoryListViewController.swift; sourceTree = "<group>"; };
+		9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PKRepositoryListViewController.xib; sourceTree = "<group>"; };
 		A00C57E65B1DE9DFAF4B10C3 /* Pods_repository_repositoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_repository_repositoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BED531B22BC689E6C48DDE60 /* Pods-repository-repositoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository-repositoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-repository-repositoryUITests/Pods-repository-repositoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C0419D9F7DE14E83963F10D3 /* Pods-repository.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-repository.debug.xcconfig"; path = "Target Support Files/Pods-repository/Pods-repository.debug.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +281,9 @@
 				9999BCC82725779100FC938C /* PKRepositoryListProtocols.swift */,
 				9999BCCA2725784400FC938C /* PKRepositoryViewData.swift */,
 				9999BCCC272578AE00FC938C /* PKRepositoryListCoordinator.swift */,
+				9999BCCE27257AB400FC938C /* PKRepositoryListViewModel.swift */,
+				9999BCD027257C6800FC938C /* PKRepositoryListViewController.swift */,
+				9999BCD127257C6800FC938C /* PKRepositoryListViewController.xib */,
 			);
 			path = RepositoryList;
 			sourceTree = "<group>";
@@ -412,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9999BC4B27255CBA00FC938C /* LaunchScreen.storyboard in Resources */,
+				9999BCD327257C6800FC938C /* PKRepositoryListViewController.xib in Resources */,
 				9999BC4827255CBA00FC938C /* Assets.xcassets in Resources */,
 				9999BC4627255CB400FC938C /* Main.storyboard in Resources */,
 			);
@@ -550,7 +560,9 @@
 				9999BCC62725772800FC938C /* VIewController+Extensions.swift in Sources */,
 				9999BC8C27256A8D00FC938C /* PKRepositoryServiceEndPoints.swift in Sources */,
 				9999BC79272560B500FC938C /* PKRepositoryResponse.swift in Sources */,
+				9999BCCF27257AB400FC938C /* PKRepositoryListViewModel.swift in Sources */,
 				9999BC4127255CB400FC938C /* SceneDelegate.swift in Sources */,
+				9999BCD227257C6800FC938C /* PKRepositoryListViewController.swift in Sources */,
 				9999BCC92725779100FC938C /* PKRepositoryListProtocols.swift in Sources */,
 				9999BC82272566C400FC938C /* PKNetworkError.swift in Sources */,
 				9999BC7B2725619800FC938C /* PKCoordinator.swift in Sources */,

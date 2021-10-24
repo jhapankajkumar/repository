@@ -24,7 +24,7 @@ protocol PKRepositoryListViewModelProtocol: AnyObject {
     
     //Events
     func fetchRepositoryList()
-    func didSelectRowAt(indexPath: IndexPath, fromView: UIViewController)
+    func didSelectRowAt(indexPath: IndexPath, fromView: PKRepositoryListViewProtocol)
 }
 
 // MARK: ViewModel Delegate -
@@ -35,5 +35,5 @@ protocol PKRepositoryListViewModelDelegate: AnyObject {
 
 // MARK: Coordinator Protocol -
 protocol PKRepositoryListCoordinateDelegate: AnyObject {
-    func didSelectRepository(repository: PKRepository,  from controller: UIViewController)
+    func didSelectRepository(repository: PKRepository,  from controller: PKRepositoryListViewProtocol)
 }

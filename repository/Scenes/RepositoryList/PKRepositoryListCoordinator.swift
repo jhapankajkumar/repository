@@ -16,6 +16,13 @@ final class PKRepositoryListCoordinator: PKCoordinator {
     }
     
     func start() {
+        let service: PKRepositoryServiceProtocol = PKRespositoryService()
+        let viewModel: PKRepositoryListViewModelProtocol = PKRepositoryListViewModel(service: service)
+        
+        let view: UIViewController & PKRepositoryListViewProtocol & PKRepositoryListViewModelDelegate = PKRepositoryListViewController(with: viewModel)
+        viewModel.viewDelegate = view
+        viewModel.coordinatorDelegate = self
+        self.navigationController.setViewControllers([view], animated: true)
     }
     
     func addChildCoordinator(_ coordinator: PKCoordinator) {
@@ -30,7 +37,7 @@ final class PKRepositoryListCoordinator: PKCoordinator {
 }
 
 extension PKRepositoryListCoordinator: PKRepositoryListCoordinateDelegate {
-    func didSelectRepository(repository: PKRepository, from controller: UIViewController) {
+    func didSelectRepository(repository: PKRepository, from controller: PKRepositoryListViewProtocol) {
        
     }
 }

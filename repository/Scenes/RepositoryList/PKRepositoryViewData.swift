@@ -15,7 +15,7 @@ protocol PKRepositoryViewDataProtocol {
     var uuid: String? {get}
 }
 
-struct PKBLRepositoryListViewData {
+struct PKRepositoryListViewData {
     let repository: PKRepository
     
     init(repository: PKRepository) {
@@ -23,7 +23,7 @@ struct PKBLRepositoryListViewData {
     }
 }
 
-extension PKBLRepositoryListViewData: PKRepositoryViewDataProtocol {
+extension PKRepositoryListViewData: PKRepositoryViewDataProtocol {
     var avatarURL: String? {
         return repository.owner?.links?.avatar?.href
     }
